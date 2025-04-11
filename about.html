@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meetup</title>
+    <link rel="icon" href="images/meetup-logo.svg" type="image/svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/abouts.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <div class="header-left">
+                <a href="index.html"> <img src="images/meetup-logo.svg" alt="meetup-logo"></a>
+
+                <div class="header-child-search">
+                    <input type="text" id="searchEvents" placeholder="Search events">
+                    <input type="text" id="searchEvents2" placeholder="New York, NY">
+                    <button id="searchLogo"><img src="images/search-logo.svg" alt="search-logo"></button>
+                </div>
+            </div>
+
+            <div class="header-right">
+                <div class="set-language">
+                    <span><img src="images/language-logo.svg" alt="language-logo"></span>
+                    <a href="#"> English</a>
+                </div>
+                <a href="#">Log in</a>
+                <button>Sign up</button>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="main-conteiner-about">
+        <div class="left-main-conteiner">
+            <div class="events-info">
+                <h2>Events near New York, NY</h2>
+                <a href="#">Events</a>
+
+                <!-- --------------------------------------------------- -->
+                <div class="all-catalogs">
+                    <div class="catalog">
+                        <select id="typeSelect">
+                            <option value="" selected>Any type</option>
+                            <option value="online">Online</option>
+                            <option value="offline">Offline</option>
+                        </select>
+                    </div>
+                    <div class="catalog">
+                        <select id="distanceSelect">
+                            <option value="" selected>Any distance</option>
+                            <option value="5">5 km</option>
+                            <option value="10">10 km</option>
+                            <option value="15">15 km</option>
+                            <option value="25">25 km</option>
+                            <option value="75">75 km</option>
+                            <option value="50">50 km</option>
+                            <option value="100">100 km</option>
+                        </select>
+                    </div>
+                    <div class="catalog">
+                        <select id="categorySelect">
+                            <option value="" selected>Any category</option>
+                            <option value="Social Activities">Social Activities</option>
+                            <option value="Hobbies and Passions">Hobbies and Passions</option>
+                            <option value="Health and Wellbeing">Health and Wellbeing</option>
+                            <option value="Business">Business</option>
+                            <option value="Technology">Technology</option>
+
+                        </select>
+                    </div>
+                    <div class="catalog">
+                        <select id="dateSelect">
+                            <option value="" selected>Any day</option>
+                            <option value="2024-03-13T11:00">Mar 13, 11:00 AM</option>
+                            <option value="2024-03-14T11:00">Mar 14, 11:00 AM</option>
+                            <option value="2024-03-14T20:00">Mar 14, 8:00 PM</option>
+                            <option value="2024-03-16T14:00">Mar 16, 2:00 PM</option>
+                            <option value="2024-03-23T11:30">Mar 23, 11:30 AM</option>
+                            <option value="2024-03-30T14:00">Mar 30, 2:00 PM</option>
+                        </select>
+                    </div>
+                </div>
+
+
+
+                <!-- --------------------------------------------------- -->
+                <!-- <div class="all-catalogs">
+                    <div class="catalog">
+                        <div>Any type </div>
+                        <button class="custom-arrow"><img src="about-images/select.svg" alt=""></button>
+
+                    </div>
+
+                    <div class="catalog">
+                        <div>Any distance </div>
+                        <button class="custom-arrow"><img src="about-images/select.svg" alt=""></button>
+
+                    </div>
+
+                    <div class="catalog">
+
+                        <div>Any category </div>
+                        <button class="custom-arrow"><img src="about-images/select.svg" alt=""></button>
+                    </div>
+
+                </div> -->
+
+                <!-- --------------------------------------------------- -->
+            </div>
+
+            <div class="event-main-conteiner">
+                <!-- <div class="event event1">
+                    <hr>
+                    <div class="card-text1">
+                        <img src="about-images/event-img1.svg" alt="">
+                        <div class="text text-event1">
+                            <p>Wed, Mar 13 · 11:30 PM UTC</p>
+                            <h5>All Nations - Manhattan Missions Church Bible Study</h5>
+                            <p>Hobbies and Passions (5 km)</p>
+                            <p>99 attendees</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="event event2">
+                    <hr>
+                    <div class="card-text1">
+                        <img src="about-images/event-img2.svg" alt="">
+                        <div class="text text-event1">
+                            <p>Sat, Mar 23 · 3:00 PM UTC</p>
+                            <h5>INFJ Personality Type - Coffee Shop Meet & Greet</h5>
+                            <p>Hobbies and Passions (25 km)</p>
+                            <p>99 attendees</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="event event3">
+                    <hr>
+                    <div class="card-text1">
+                        <img src="about-images/event-img2.svg" alt="">
+                        <div class="text text-event1">
+                            <p>Sat, Mar 23 · 3:00 PM UTC</p>
+                            <h5>INFJ Personality Type - Coffee Shop Meet & Greet</h5>
+                            <p>Hobbies and Passions (25 km)</p>
+                            <p>99 attendees</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event event4">
+                    <hr>
+                    <div class="card-text1">
+                        <img src="about-images/event-img4.svg" alt="">
+                        <div class="online-event">
+                            <img src="about-images/Online Event.svg" alt="">
+                        </div>
+
+
+                        <div class="text text-event1">
+                            <p>Wed, Mar 13 · 11:30 PM UTC</p>
+                            <h5>Book 40+ Appointments Per Month Using AI and
+                                Automation</h5>
+                            <p>Technology</p>
+                            <p>99 attendees</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event event5">
+                    <hr>
+                    <div class="card-text1">
+                        <img src="about-images/event-img5.svg" alt="">
+
+
+
+                        <div class="text text-event1">
+                            <p>Wed, Mar 13 · 11:00 PM UTC</p>
+                            <h5>Dump writing group weekly meetup</h5>
+                            <p>Hobbies and Passions</p>
+                            <p>77 attendees</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="event event6">
+                    <hr>
+                    <div class="card-text1">
+                        <img src="about-images/event-img6.svg" alt="">
+                        <div class="online-event">
+                            <img src="about-images/Online Event.svg" alt="">
+                        </div>
+
+
+
+                        <div class="text text-event1">
+                            <p>Thu, Mar 14 · 11:00 PM UTC</p>
+                            <h5>Over 40s, 50s, & 60s Senior Singles Chat, Meet &
+                                Dating Community</h5>
+                            <p>Hobbies and Passions</p>
+                            <p>140 attendees</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+        <div class="right-main-conteiner">
+            <div class="text-right-main-conteiner">
+                <p>Find events near</p>
+                <h3>New York, NY</h3>
+            </div>
+
+            <div class="right-map-block">
+                <button id="buttonKreuz"><img src="about-images/btn-kreuz.svg" alt="btn-kreuz"></button>
+                <button>
+                    <p>Browse in map</p> <img src="about-images/map-icon.svg" alt="map-icon">
+                </button>
+
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="last-conteiner">
+        <div class="top-block-last-conteiner">
+            <h4>
+                Create your own Meetup group.
+            </h4>
+            <a href="#">Get Started</a>
+        </div>
+
+        <div class="mid-block-last-conteiner">
+
+
+            <div class="mid-block-settings">
+                <h5>Your Account</h5>
+                <a href="#">Sign up</a>
+                <a href="#">Log in</a>
+                <a href="#">Help</a>
+                <a href="#">Become an Affiliate</a>
+
+            </div>
+            <div class="mid-block-settings">
+                <h5>Discover</h5>
+                <a href="#">Groups</a>
+                <a href="#">Calendar</a>
+                <a href="#">Topics</a>
+                <a href="#">Cities</a>
+                <a href="#">Online Events</a>
+                <a href="#">Local Guides</a>
+                <a href="#">Make Friends</a>
+
+            </div>
+            <div class="mid-block-settings">
+                <h5>Meetup</h5>
+                <a href="#">About</a>
+                <a href="#">Blog</a>
+                <a href="#">Meetup Pro</a>
+                <a href="#">Careers</a>
+                <a href="#">Apps</a>
+                <a href="#">Podcast</a>
+
+            </div>
+        </div>
+
+        <div class="apps-footer-conteiner">
+            <div class="block-follow-us">
+                <h5>Follow us</h5>
+                <div class="links-follow-us">
+                    <a href="#"><img src="images/facebook-logo.svg" alt="facebook-logo"></a>
+                    <a href="#"><img src="images/twitter-logo.svg" alt="twitter-logo"></a>
+                    <a href="#"><img src="images/Youtube-logo.svg" alt="Youtube-logo"></a>
+                    <a href="#"><img src="images/instagram-logo.svg" alt="instagram-logo"></a>
+                    <a href="#"><img src="images/tiktok-logo.svg" alt="tiktok-logo"></a>
+
+                </div>
+            </div>
+            <div class="play-app-store">
+                <a href="#"><img src="images/playStore.svg" alt="playStore"></a>
+                <a href="#"><img src="images/appstore-logo.svg" alt="appstore-logo"></a>
+
+            </div>
+
+        </div>
+        <div class="bottom-block-last-conteiner">
+
+            <p>© 2024 Meetup</p>
+
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Do Not Sell or Share My Personal Data</a>
+            <a href="#">Cookie Policy</a>
+            <a href="#">Help</a>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="about.js"></script>
+    <script src="function.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

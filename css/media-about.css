@@ -1,0 +1,273 @@
+@media(max-width:393px) {
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        border: none;
+        padding-top: 4px;
+        padding-right: 7px;
+        padding-bottom: 0;
+        padding-left: 24px;
+        align-items: center;
+    }
+
+    .header-left {
+        display: flex;
+        column-gap: 61px;
+        padding-left: 24px;
+        align-items: center;
+    }
+
+    #searchEvents2 {
+        display: none;
+    }
+
+    .header-child-search {
+        position: absolute;
+        top: 53px;
+        left: 20px;
+    }
+
+    .header-right {
+        gap: 18.7px;
+    }
+
+
+
+    .main-conteiner-about {
+        display: flex;
+        width: 100%;
+        border: none;
+        padding: 0;
+        justify-content: space-between;
+        margin-top: 75px;
+        /* flex-wrap: wrap; */
+    }
+
+    .left-main-conteiner {
+        width: 100%;
+    }
+
+    .events-info {
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+        margin-left: 12px;
+        /* border: 2px solid rgb(111, 0, 55); */
+    }
+
+    .events-info h2 {
+        font-size: 25px;
+    }
+
+    .all-catalogs {
+        display: flex;
+        gap: 19.5px;
+        align-items: center;
+        width: 100%;
+        /* position: relative;
+        right: -20px; */
+        padding-bottom: 10px;
+        overflow-x: auto;
+    }
+/* 
+    .catalog {
+        flex-shrink: 0;
+        background-color: #F6F7F8;
+        min-width: 118px;
+        white-space: nowrap;
+    } */
+
+    select {
+        flex-shrink: 0;
+        min-width: 118px;
+        white-space: nowrap;
+    }
+    .right-main-conteiner {
+        display: none;
+    }
+
+
+
+    /* ______________________________ */
+
+    .event1 {
+        display: flex;
+        flex-direction: column;
+        gap: 9.81px;
+        border-bottom: none;
+        padding: 0 12px;
+    }
+
+    .event-first {
+        margin-bottom: 40px;
+
+    }
+
+    .card-text1 {
+        display: flex;
+        column-gap: 7.35px;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .card-text1 img {
+        width: 97px;
+    }
+
+    .text-event1 {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+    }
+
+
+    .text-event1 p:nth-of-type(1) {
+        letter-spacing: 0px;
+        font-weight: var(--font-weight-medium);
+        font-size: 8.58px;
+        line-height: 12.3px;
+        color: #7C6F50;
+        margin: 2.19px 0;
+    }
+
+    .text-event1 h5 {
+        font-size: 9.81px;
+        font-weight: var(--font-weight-medium);
+        line-height: 14.7px;
+        color: var(--text-bold-color);
+    }
+
+    .text-event1 p:nth-of-type(2) {
+        font-weight: 400;
+        font-size: 8.58px;
+        line-height: 20px;
+        color: #707070;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .last-conteiner {
+        padding: 20px 7px 36px 18px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    /* .top-block-last-conteiner {
+        display: flex;
+        gap: 0px;
+        align-items: center;
+        border-bottom: 1px solid #707070;
+        padding-bottom: 25px;
+        margin-bottom: 34px;
+    }
+      */
+
+    .top-block-last-conteiner {
+        display: flex;
+        gap: 0px;
+        align-items: center;
+        padding-bottom: 25px;
+        margin-bottom: 34px;
+        position: relative;
+        /* для того, чтобы псевдоэлемент был относительно этого блока */
+        border-bottom: none;
+    }
+
+    .top-block-last-conteiner::before {
+        content: '';
+        /* обязательный элемент для псевдоэлемента */
+        position: absolute;
+        bottom: 0;
+        /* размещаем его внизу */
+        left: 34%;
+        /* выравниваем по центру */
+        transform: translateX(-50%);
+        /* центрируем */
+        width: 67%;
+        /* задаем длину границы, например, 50% */
+        height: 1px;
+        /* высота псевдоэлемента, делаем его тонким */
+        background-color: #707070;
+        /* цвет границы */
+    }
+
+    .top-block-last-conteiner h4 {
+        border: none;
+    }
+
+    .top-block-last-conteiner a {
+        width: 119px;
+        transition: 0.5s;
+    }
+
+    .mid-block-last-conteiner {
+        gap: 2.5px;
+        border: none;
+        margin-bottom: 21px;
+    }
+
+    .mid-block-settings {
+        border-right: none;
+    }
+
+    .mid-block-settings h5 {
+        font-weight: var(--font-weight-regular);
+    }
+
+    .play-app-store {
+        display: none;
+
+    }
+
+    .apps-footer-conteiner {
+        margin-bottom: 49px;
+    }
+
+    .bottom-block-last-conteiner {
+        display: flex;
+        column-gap: 0;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+
+    .bottom-block-last-conteiner a {
+        display: none;
+    }
+
+.mid-block-settings:nth-of-type(2){
+    padding-left: 5px;
+}
+.mid-block-settings:nth-of-type(3){
+    padding-left: 4px;
+}
+}
