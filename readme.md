@@ -1,13 +1,20 @@
-Требования
+# Meet Up 🎉  
+A web application for discovering and joining community events. Built with HTML, SCSS, and JavaScript.  
 
-● Шрифт Roboto, подключить с помощью Google Fonts.
-● При клике на кнопку join Meetup пользователь попадает на вторую страницу
-“Events near New York, NY‘.
-● Из функциональной части только фильтрация мероприятий. Реализовать
-фильтрацию по дате, типу мероприятия, дистанции и категории (все опции
-для выбора вы найдете в мок данных к проекту (см. ниже)).
-● Веб сайт должен быть адаптивным.
-● При клике на лого (навбар левый верхний угол) пользователь попадает на
-главную страницу.
-● Стили реализовать с помощыю предпроцесора sass
+## ✨ Features  
+- 🗓️ Browse and filter events by type, category, distance, and date  
+- 🎯 Join events via interactive "Join Meetup" feature  
+- 📱 Fully responsive design for desktop, tablet, and mobile  
+- ⚡ Smooth user experience with dynamic UI  
 
+## ⚙️ Tech Stack  
+- Frontend: HTML5, SCSS, JavaScript  
+- Tools: Git, GitHub, Vercel  
+
+## 🚀 Installation  
+```bash
+# Clone repository
+git clone https://github.com/DimaTaos4/meetup-project
+
+# Open in browser
+index.html
